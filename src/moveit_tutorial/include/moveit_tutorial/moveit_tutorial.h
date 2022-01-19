@@ -65,7 +65,7 @@
   * moveit_tutorial.cpp file.
   *
   * \author Luke Beddow
-  * \author Maria Samatopoulou
+  * \author Maria Stamatopoulou
   */
 class SrvClass
 {
