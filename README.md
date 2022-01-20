@@ -49,6 +49,18 @@ Copy the entire ‘moveit_tutorial’ folder into the main workspace, i.e., comp
 > sudo apt-get install ros-melodic-pcl-ros 
 ```
 
+## Add the Open Gazebo Models Database
+Use git to get a bunch of open source gazebo models from the Open Source Robotics Foundation (OSRF) 
+
+```
+git clone https://github.com/osrf/gazebo_models.git
+```
+Add Models path to the bashrc
+```
+echo 'export GAZEBO_MODEL_PATH=~/gazebo_ws/gazebo_models:${GAZEBO_MODEL_PATH}' >> ~/.bashrc
+source ~/.bashrc
+```
+
 ### Build and Try
 ```bash
 > cd ~/comp0129_s22_lab
