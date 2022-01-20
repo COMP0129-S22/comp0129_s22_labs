@@ -48,3 +48,9 @@ Copy the entire ‘moveit_tutorial’ folder into the main workspace, i.e., comp
 > sudo apt-get install libpcl-dev
 > sudo apt-get install ros-melodic-pcl-ros 
 ```
+> cd ~/comp0129_s22_lab
+> catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
+> catkin build
+> source devel/setup.bash
+> roslaunch pcl_tutorial pcl_tutorial.launch  
+```
