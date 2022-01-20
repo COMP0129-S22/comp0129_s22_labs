@@ -53,11 +53,12 @@ Copy the entire ‘moveit_tutorial’ folder into the main workspace, i.e., comp
 Use git to get a bunch of open source gazebo models from the Open Source Robotics Foundation (OSRF) 
 
 ```
-git clone https://github.com/osrf/gazebo_models.git
+> cd
+> git clone https://github.com/osrf/gazebo_models.git
 ```
 Add Models path to the bashrc
 ```
-echo 'export GAZEBO_MODEL_PATH=~/gazebo_ws/gazebo_models:${GAZEBO_MODEL_PATH}' >> ~/.bashrc
+> echo 'export GAZEBO_MODEL_PATH=~/gazebo_ws/gazebo_models:${GAZEBO_MODEL_PATH}' >> ~/.bashrc
 source ~/.bashrc
 ```
 
