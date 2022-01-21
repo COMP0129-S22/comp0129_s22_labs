@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/luke/comp0129/lab_repo_private/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/luke/comp0129/lab_repo_private/src/moveit_solution/include/**",
+        "/home/luke/comp0129/lab_repo_private/src/moveit_tutorial/include/**",
+        "/home/luke/comp0129/lab_repo_private/src/pcl_tutorial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
