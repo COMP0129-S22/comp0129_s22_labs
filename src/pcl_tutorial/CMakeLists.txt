@@ -3,7 +3,7 @@ project(pcl_tutorial)
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+#add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -18,9 +18,8 @@ find_package(catkin REQUIRED COMPONENTS roscpp
                                         tf
                                         tf2
                                         tf2_ros
-                                        pcl_conversions
                                         pcl_ros
-  
+                                        pcl_conversions
 )
 
 ## System dependencies are found with CMake's conventions
@@ -128,8 +127,8 @@ catkin_package(
                   tf
                   tf2
                   tf2_ros
-                  pcl_conversions
-                  pcl_ros
+                  #pcl_conversions
+                  #pcl_ros
   #DEPENDS system_lib
 )
 
