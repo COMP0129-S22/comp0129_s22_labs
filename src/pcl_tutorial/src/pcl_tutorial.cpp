@@ -82,14 +82,17 @@ PCLTutorial::cloudCallBackOne
   // Perform the filtering
   applyVX (g_cloud_ptr, g_cloud_filtered);
   //applyPT (g_cloud_ptr, g_cloud_filtered);
-  findNormals (g_cloud_filtered);
-  segPlane (g_cloud_filtered);
-  segCylind (g_cloud_filtered);
-  findCylPose (g_cloud_cylinder);
+  
+  // Segment plane and cylinder
+  //findNormals (g_cloud_filtered);
+  //segPlane (g_cloud_filtered);
+  //segCylind (g_cloud_filtered);
+  //findCylPose (g_cloud_cylinder);
     
   // Publish the data
   //ROS_INFO ("Publishing Filtered Cloud 2");
-  //pubFilteredPCMsg (g_pub_cloud, *g_cloud_filtered);
+  pubFilteredPCMsg (g_pub_cloud, *g_cloud_filtered);
+  //pubFilteredPCMsg (g_pub_cloud, *g_cloud_cylinder);
   
   return;
 }
@@ -195,7 +198,6 @@ PCLTutorial::segCylind (PointCPtr &in_cloud_ptr)
   g_extract_pc.setIndices (g_inliers_cylinder);
   g_extract_pc.setNegative (false);
   g_extract_pc.filter (*g_cloud_cylinder);
-  pubFilteredPCMsg (g_pub_cloud, *g_cloud_cylinder);
   
   ROS_INFO_STREAM ("PointCloud representing the cylinder component: "
                    << g_cloud_cylinder->size ()
